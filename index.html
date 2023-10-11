@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Denilson Arguelho Desenvolvedor</title>
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="css/app.css">
+    <!--Font Aewsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body class="change-theme">
+    <div id="container">
+        <!--Header-->
+        <header class="header">
+            <div class="header__top-header header__top-header--desktop">
+                <h1 class="desktop-header__title">Denilson Arguelho</h1>
+                <ul class="desktop__navigation-menu__items">
+                    <li class="desktop__items">
+                        <a class="desktop-item-navigation" href="#main__container" title="Portfolio">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="desktop__items">
+                        <a  class="desktop-item-navigation" href="#skills" title="Habilidades">
+                            Habilidades
+                        </a>
+                    </li>
+                    <li class="desktop__items">
+                        <a  class="desktop-item-navigation" href="#about" title="Sobre">
+                            Sobre mim
+                        </a>
+                    </li>
+                    <li class="desktop__items">
+                        <a  class="desktop-item-navigation" href="#contact" title="Contato">
+                           Contato
+                        </a>
+                    </li>                    
+                </ul>
+                <div class="header__dark-mode">
+                    <input type="checkbox" name="change-theme" id="change-theme"/>
+                    <label for="change-theme">
+                        <i class="bi bi-moon-fill"></i>
+                        <i class="bi bi-brightness-high-fill"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="header__top-header header__top-header--mobile">
+                <div id="toggle-menu" class="header__menu-toggle" onclick="openSideMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <h1 class="header__title">Denilson</h1>
+                <div class="header__dark-mode">
+                    <input type="checkbox" name="change-theme" id="change-theme"/>
+                    <label for="change-theme">
+                        <i class="bi bi-moon-fill"></i>
+                        <i class="bi bi-brightness-high-fill"></i>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <nav id="side-navigation-menu" class="header__navigation-menu">
+            <div class="navigation-menu__items">
+                <div class="toClose-Box">
+                    <span id="toClose-sideMenu" onclick="closeSideMenu()">
+                        <i class="fa-solid fa-x"></i>
+                    </span>
+                </div>
+                <a class="item-navigation" href="#main__container" title="Portfolio">
+                    <i class="fa-solid fa-user"></i>Portfolio
+                </a>
+                <a  class="item-navigation" href="#skills" title="Habilidades">
+                    <i class="fa-solid fa-graduation-cap"></i>Habilidades
+                </a>
+                <a  class="item-navigation" href="#about" title="Sobre">
+                    <i class="fa-solid fa-user"></i>Sobre mim
+                </a>
+                <a  class="item-navigation" href="#contact" title="Contato">
+                    <i class="fa-solid fa-address-book"></i>Contact
+                </a>
+            </div>
+            <div class="navigation-menu__react-developer">
+                <h2 class="react-developer__subtitle">React Developer</h2>
+            </div>
+            <div class="navigation-menu__hard-skills">
+                <ul class="hard-skills">
+                    <i class="fa-brands fa-react" title="React"></i>
+                    <i class="fa-brands fa-sass" title="Sass"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-github"  title="GitHub"></i>
+                </ul>
+            </div>
+        </nav>
+        <!--End of the Header-->
+        <!--Main-->
+        <main id="main__container">
+            <section id="portfolio" class="main__container__section">
+                <div class="section-container__portfolio">
+                    <button class="portfolio__arrow-left control">◀</button>
+                    <button class="portfolio__arrow-right control">▶</button>
+                    <div class="cards-portfolio--wrapper">
+                        <div class="cards-portfolio">
+                            <!--Start of the Project-->
+                            <div class="card current-card">
+                                <div class="card__project-image project06">
+                                </div>
+                                <div class="card__project-content">
+                                    <p class="card__project-content-title">
+                                        iMovi
+                                    </p>
+                                    <p class="card__project-content-description">
+                                        Meu primeiro projeto realizado com framework Bootstrap.
+                                        <span class="card__project-content-description__technologies"><i class="fa-brands fa-html5" title="HTML5"></i></span>
+                                        <span class="card__project-content-description__technologies"><i class="fa-brands fa-css3-alt" title="CSS3"></i></span>
+                                        <span class="card__project-content-description__technologies"><i class="fa-brands fa-bootstrap" title="BOOSTRAP"></i></span>
+                                    </p>
+                                </div>
+                                <div class="card__project-view">
+                                    <a class="card__project-view__btn" href="https://github.com/denilson-arguelho/projeto-bootstrap5" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Code
+                                    </a>
+                                    <a class="card__project-view__btn" href="https://denilson-arguelho.github.io/projeto-bootstrap5/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i> Projeto
+                                    </a>
+                                </div>
+                            </div>
+                            <!--End of the Project-->
+                            <!--Start of the Project-->
+                            <div class="card">
+                                <div class="card__project-image project05">
+
+                                </div>
+                                <div class="card__project-content">
+                                    <p class="card__project-content-title">
+                                        FlexBlog
+                                    </p>
+                                    <p class="card__project-content-description">
+                                        Aprimorando conhecimento em Flebox.
+                                        <span class="card__project-content-description__technologies"><i class="fa-brands fa-html5" title="HTML5"></i></span>
+                                        <span class="card__project-content-description__technologies"><i class="fa-brands fa-css3-alt" title="CSS3"></i></i></span>
+                                    </p>
+                                </div>
+                                <div class="card__project-view">
+                                    <a class="card__project-view__btn" href="https://github.com/denilson-arguelho/flexblog" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Code
+                                    </a>
+                                    <a class="card__project-view__btn" href="https://denilson-arguelho.github.io/flexblog/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i> Projeto
+                                    </a>
+                                </div>
+                            </div>
+                            <!--End of the Project-->
+                            <!--Start of the Project-->
+                            <div class="card">
+                                <div class="card__project-image project04">
+                                </div>
+                                <div class="card__project-content">
+                                    <p class="card__project-content-title">
+                                        Pizza E-Commerce
+                                    </p>
+                                    <p class="card__project-content-description">
+                                        Aprimorando a lógica de programação.
+                                        <span class="card__project-content-description__technologies"><i class="fa-brands fa-html5" title="HTML5"></i></span>
+                                        <span class="card__project-content-description__technologies"><i class="fa-brands fa-css3-alt" title="CSS3"></i></i></span>
+                                        <span class="card__project-content-description__technologies"><i class="fa-brands fa-js" title="JavaScript"></i></span>
+                                        
+                                    </p>
+                                </div>
+                                <div class="card__project-view">
+                                    <a class="card__project-view__btn" href="https://github.com/denilson-arguelho/ecommerce-pizza" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Code
+                                    </a>
+                                    <a class="card__project-view__btn" href="https://denilson-arguelho.github.io/ecommerce-pizza/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i> Projeto
+                                    </a>
+                                </div>
+                            </div>
+                            <!--End of the Project-->
+                             <!--Start of the Project-->
+                            <div class="card">
+                                <div class="card__project-image project03">
+                                </div>
+                                <div class="card__project-content">
+                                    <p class="card__project-content-title">
+                                        Secretword
+                                    </p>
+                                    <p class="card__project-content-description">
+                                        Projeto utilizando  React. <span class="card__project-content-description__technologies"><i class="fa-brands fa-react"></i></span><span class="card__project-content-description__technologies"></span>
+                                    </p>
+                                </div>
+                                <div class="card__project-view">
+                                    <a class="card__project-view__btn" href="https://github.com/denilson-arguelho/secretword" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Code
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__project-image project02">
+                                </div>
+                                <div class="card__project-content">
+                                    <p class="card__project-content-title">
+                                        Deni Burguer
+                                    </p>
+                                    <p class="card__project-content-description">
+                                        Meu primeiro projeto utilizando Vue Js. <span class="card__project-content-description__technologies"><i class="fa-brands fa-vuejs"></i></span><span class="card__project-content-description__technologies"></span>
+                                    </p>
+                                </div>
+                                <div class="card__project-view">
+                                    <a class="card__project-view__btn" href="https://github.com/denilson-arguelho/deniburger" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Code
+                                    </a>
+                                </a>
+                                <a class="card__project-view__btn" href="https://deniburger.netlify.app/" target="_blank">
+                                    <i class="fa-solid fa-eye"></i> Projeto
+                                </a>
+                                </div>
+                            </div>
+
+                            <!--End of the Project-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="main__container__section">
+                <h2 class="text-section__title">Minhas habilidades</h2>
+                <p class="text-section__subtitle">Aqui está alguns stack que tenho conhecimento</p>
+                <div class="section__container__skills">
+                    <div class="section__text-section">
+                        <p class="text-section__paragraph">
+                            O roteiro de estudos para ser um bom Desenvolvedor é muito grande, por isso, tenho seguido as instruções e a ordem certa que alguns desenvolvedores conversaram comigo. Atualmente, tenho focado em me tornar um Desenvolvedor React. Também adiciono programação aos meus conhecimentos prévios que adquiri durante minha jornada de estudos.
+                        </p>
+                    </div>
+                    <div class="section__hard-skills">
+                        <ul class="hard-skills">
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-sass"></i>
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="main__container__section">
+                <div class="section__container__about-me">
+                    <div class="section__text-section">
+                        <h2 class="text-section__title title-about-me">Sobre mim</h2>
+                        <p class="text-section__subtitle">Imagino que seu tempo seja curto, então tentarei ser rápido</p>
+                        <h2 class="text-section__subtitle__Arthur"><span class="highlight">D</span>enilson Arguelho</h2>
+                        <p class="text-section__paragraph">
+                            Bom, sou brasileiro, Douradense, nasci em fevereiro de 2000, fui militar do Exército Brasileiro entre março de 2019 e março de 2022. Gosto de esportes, principalmente musculação. Gosto também de jogar videogame 🙂
+                            <br />
+                            Comecei a faculdade em 2021, com o objetivo de aprender e melhorar minhas habilidades na area que tanto amo, gosto de ver a “mágica” acontecer no mundo da Programação . 
+                            <br />
+                            Manter o foco em alguma coisa e sempre pensar em diversas formas de resolver é o que sempre faço na minha vida, então, sei que estou no caminho certo.
+                            <br />
+                            Hoje em dia, além dos estudos para aprimorar minhas habilidades como desenvolvedor Front-End, tenho estudado a língua inglesa, pois sei que é essencial para ter sucesso na minha carreira.
+                            <br />
+                            
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--End of Main-->
+        <!--Contact-->
+        <div id="contact" class="container__contact">
+            <h2 class="text__title">Contato</h2>
+            <div class="box-contact">
+                <div class="contact__img">
+                </div>
+                <div class="contact__icons">
+                    <a href="https://www.linkedin.com/in/denilson-arguelho/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/denilson-arguelho" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:denilsonsilva488@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://contate.me/denilson-arguelho" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--End of Contac-->
+        <!--Footer-->
+        <footer id="footer__container">
+            <div class="container-bottom-bar">
+                <p class="footer_text">&copy;2023 Denilson Arguelho Desenvolvedor</p>
+                <a class="footer_up-page" href="#main__container">
+                    <i class="up-page fa-solid fa-caret-up"></i>
+                </a>
+            </div>
+        </footer>
+        <!--Footer of Main-->
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
